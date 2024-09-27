@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;400;500;600;700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Mulish', sans-serif;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./assets/Backround2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed; /* Optional: This makes the background image stay fixed during scrolling */
+    color: white;
+}
+
+.hero-content {
+    width: 100%;
+    height: 100vh; /* Use full viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero-content nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 10px;
+    background-color: rgba(0, 0, 0, 0.5); /* Optional: To make the nav bar stand out */
+}
+
+.hero-content nav .brand {
+    font-size: 1.7rem;
+    font-weight: bolder;
+}
+
+.hero-content nav .brand span {
+    color: red;
+}
+
+.hero-content nav ul li {
+    display: inline-block;
+    padding-left: 2rem;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-left: 4px;
+}
+
+.hero-content nav ul li a {
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.hero-content nav ul li a:hover {
+    color: red;
+    transition: 0.5s;
+}
+
+.hero-content nav button {
+    width: 150px;
+    padding: 8px 0;
+    background-color: red;
+    border-radius: 0;
+    border: none;
+    outline: none;
+    font-weight: bold;
+    color: white;
+}
+
+.hero-content nav button:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.hero-content .content {
+    text-align: center;
+    margin: auto; /* Center content vertically and horizontally */
+}
+
+.hero-content .content h2 {
+    margin: 10px 0;
+    font-size: 2.3rem;
+    font-weight: bold;
+}
+
+.hero-content .content p {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+.content p {
+    font-family: 'Noto Sans Tamil', sans-serif; /* Font for Tamil text */
+    font-size: 1.3rem;
+    color: white; /* Adjust color as needed */
+    margin: 10px 0;
+}
+
+.content p:last-of-type {
+    font-size: 1.5rem; /* Example: Larger size for the new Tamil text */
+    color: lightyellow; /* Example: Different color */
+}

@@ -4,21 +4,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Node App</title>
+    <title>MK Gym Home</title>
     <style>
-        body {
-            background-color: yellow;
-        }
 
-        nav{
-            background-color: black;
-        }
+.hero-content {
+    width: 100%;
+    height: 100vh; /* Use full viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
-        a{
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-        }
+.hero-content nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 10px;
+    background-color: rgba(0, 0, 0, 0.5); /* Optional: To make the nav bar stand out */
+}
+
+.hero-content nav .brand {
+    font-size: 1.7rem;
+    font-weight: bolder;
+}
+
+.hero-content nav .brand span {
+    color: red;
+}
+
+.hero-content nav ul li {
+    display: inline-block;
+    padding-left: 2rem;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-left: 4px;
+}
+
+.hero-content nav ul li a {
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.hero-content nav ul li a:hover {
+    color: red;
+    transition: 0.5s;
+}
+
     </style>
 
     {{style}}
@@ -26,17 +59,31 @@
 
 <body>
     <header>
-        <nav>
-            <a href="/">Home</a> || 
-            <a href="/about">About</a>
-        </nav>
-        <h1>My Node.js App</h1>
-    </header>
+        <div class="hero-content">
+            <nav>
+                <h2 class="brand">The <span>MK Fitness</span></h2>
+                <ul>
+                    <li><a href="Launch page.html">Home</a></li>
+                    <li><a href="./Admin/Admin_Login.html">Admin</a></li>
+                    <li><a href="./user/Login.html">Member</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                    <li><a href="#about">About</a></li>
+                </ul>
+            </nav>
+            </header>
+               
+   
     <main>
         {{content}}
     </main>
     <footer>
-        <p>&copy; 2024 My Node App</p>
+
+
+        <div class="copyright-area">
+                        <div class="copyright-text">
+                            <p>Copyright &copy; 2018, All Right Reserved </p>
+                        </div>
+                    </div>
     </footer>
     <!-- Place for scripts -->
     {{script}}
