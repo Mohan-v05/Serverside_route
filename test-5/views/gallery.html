@@ -1,0 +1,156 @@
+<style>
+.gallery {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #333;
+}
+
+p {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.grid {
+  
+   
+    gap: 20px;
+}
+
+.grid-item {
+   
+    background: #f9f9f9;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.grid-item h2 {
+    margin: 0;
+    padding: 10px;
+    background: #c22222;
+    color: white;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    background: #e7f1ff;
+    border-radius: 8px;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    width: 200px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+    margin: 0;
+    color: #ff0000;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+</style>
+<section>
+    <div class="gallery">
+        <h1>Gym Gallery</h1>
+        <p>Explore the energy and community of our gym through our gallery.</p>
+        <div class="grid">
+            <div class="grid-item">
+                <h2>Tools</h2>
+                <div class="cards">
+                    <div class="card">
+                        <h3>Dumbbells</h3>
+                        <img src="https://th.bing.com/th/id/OIP.38NTFAVg1GYdr3XS5PkFagHaFY?rs=1&pid=ImgDetMain" alt="Dumbbells">
+                    </div>
+                    <div class="card">
+                        <h3>Kettlebells</h3>
+                        <img src="data:image/jpeg;base64,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" alt="Kettlebells">
+                    </div>
+                    <div class="card">
+                        <h3>Resistance Bands</h3>
+                        <img src="https://th.bing.com/th/id/OIP.Gq6-e5rzw12tNn342dkrjgHaHu?w=176&h=185&c=7&r=0&o=5&pid=1.7" alt="Resistance Bands">
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid-item">
+                <div>
+                <h2>Supplements</h2>
+                <div class="cards">
+                    <div class="card">
+                        <h3>Protein Powder</h3>
+                        <img src="images/protein-powder.jpg" alt="Protein Powder">
+                    </div>
+                    <div class="card">
+                        <h3>Creatine</h3>
+                        <img src="https://th.bing.com/th/id/R.1782d89717eac96de80c015234c660a1?rik=C3xxteat6PtlSg&riu=http%3a%2f%2fwww.iafstore.com%2fimgp%2fbig%2fa33907.jpg&ehk=fL9wz%2b6g3jvpUIIxprHXuFtdVcxH22tFhbOLOdFdmFE%3d&risl=&pid=ImgRaw&r=0" alt="Creatine">
+                    </div>
+                    <div class="card">
+                        <h3>Vitamins</h3>
+                        <img src="images/vitamins.jpg" alt="Vitamins">
+                    </div>
+                </div>
+            </div>
+            </div>
+
+            <div class="grid-item">
+                <h2>Coaches</h2>
+                <div class="cards">
+                    <div class="card">
+                        <h3>John Doe</h3>
+                        <img src="images/john-doe.jpg" alt="John Doe">
+                    </div>
+                    <div class="card">
+                        <h3>Jane Smith</h3>
+                        <img src="images/jane-smith.jpg" alt="Jane Smith">
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid-item">
+                <h2>Celebrations</h2>
+                <div class="cards">
+                    <div class="card">
+                        <h3>Member of the Month</h3>
+                        <img src="images/member-month.jpg" alt="Member of the Month">
+                    </div>
+                    <div class="card">
+                        <h3>Anniversary Party</h3>
+                        <img src="images/anniversary.jpg" alt="Anniversary Party">
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid-item">
+                <h2>Competitions</h2>
+                <div class="cards">
+                    <div class="card">
+                        <h3>Powerlifting Meet</h3>
+                        <img src="images/powerlifting.jpg" alt="Powerlifting Meet">
+                    </div>
+                    <div class="card">
+                        <h3>Bodybuilding Show</h3>
+                        <img src="images/bodybuilding.jpg" alt="Bodybuilding Show">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

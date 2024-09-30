@@ -39,15 +39,30 @@ async function renderPage(layoutFile, contentFile) {
 }
 
 const server = http.createServer(async (req, res) => {
-    let filePath = './views/home.html';
+    let filePath = './views/about.html';
     let layout_use = './layouts/layout_user.html';
 
     if (req.url === '/') {
-        filePath = './views/home.html';
+        filePath = './views/about.html';
         layout_use = "./layouts/layout_user.html"
     }
     else if (req.url === '/about') {
         filePath = './views/about.html';
+        layout_use = "./layouts/layout_user.html";
+    }
+    else if (req.url === '/program') {
+        filePath = './views/program.html';
+        layout_use = "./layouts/layout_user.html";
+    }
+    else if (req.url === '/price') {
+        filePath = './views/price.html';
+        layout_use = "./layouts/layout_user.html";
+    }else if (req.url === '/gallery') {
+        filePath = './views/gallery.html';
+        layout_use = "./layouts/layout_user.html";
+    }
+    else if (req.url === '/contactus') {
+        filePath = './views/contactus.html';
         layout_use = "./layouts/layout_user.html";
     }
     else if (req.url === '/admin') {
