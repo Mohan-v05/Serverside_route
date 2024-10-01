@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Node App</title>
+    <style>
+        body {
+            background-color: aqua;
+        }
+
+        nav{
+            background-color: black;
+        }
+
+        a{
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+
+    {{style}}
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="nav-left">
+                <h1>MaxFit Gym</h1>
+            </div>
+            <ul class="nav-center">
+                <li><a href="/about">About</a></li>
+                <li><a href="#">Program</a></li>
+                <li><a href="#">Price</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+            <div class="nav-right">
+                <button class="btn btn-outline-dark me-2" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                    type="button"><a href="../Admin/Adminlogin.html">ADMIN</a></button>
+    
+            </div>
+        </nav>
+        <!-- <nav>
+            <a href="/">Admin</a> || 
+            <a href="/about">Fees Management</a>
+        </nav> -->
+        <h1>My Node.js App</h1>
+    </header>
+    <main>
+        {{content}}
+    </main>
+    <footer>
+        <p>&copy; 2024 My Node App</p>
+    </footer>
+    <!-- Place for scripts -->
+    {{script}}
+</body>
+
+</html>
